@@ -1,3 +1,4 @@
+set -x
 valid_branch_regex="
 ^(feature|bugfix|release|scratch)\/[a-z0-9._-]+$
 ^develop+$
