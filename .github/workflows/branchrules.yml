@@ -17,5 +17,6 @@ jobs:
     steps:
     # Runs a single command using the runners shell
     - name: branch convention
-      run: ./.github/scripts/rules.sh
-      shell: bash
+    - uses: actions/checkout@v2
+    - run: ./.github/scripts/rules.sh
+    - shell: bash
