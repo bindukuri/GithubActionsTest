@@ -17,5 +17,5 @@ jobs:
     steps:
     # Runs a single command using the runners shell
     - name: branch convention
-      run: ./.github/scripts/build.sh
+      run: ./.github/scripts/rules.sh
       shell: bash
