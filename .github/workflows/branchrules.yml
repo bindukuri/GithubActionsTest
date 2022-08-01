@@ -17,5 +17,4 @@ jobs:
     steps:
     # Runs a single command using the runners shell
     - name: branch convention
-      run: pwd
-      shell: bash
+      run: ./.github/scripts/rules.sh
