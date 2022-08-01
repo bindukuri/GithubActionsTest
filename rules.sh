@@ -17,6 +17,7 @@ for branch_regex in ${valid_branch_regex}; do
         fi
 done
 echo "$message"
-gh api --method DELETE -H "Accept: application/vnd.github+json" /repos/bindukuri/GithubActionsTest/git/refs/heads/$local_branch
+#gh api --method DELETE -H "Accept: application/vnd.github+json" /repos/bindukuri/GithubActionsTest/git/refs/heads/$local_branch
+git push origin :$local_branch
 exit 1
 
