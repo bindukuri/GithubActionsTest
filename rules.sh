@@ -16,6 +16,8 @@ for branch_regex in ${valid_branch_regex}; do
                 exit 0
         fi
 done
+gh api -X DELETE repos/${username}/${reponame}
+gh api --method DELETE -H "Accept: application/vnd.github+json" /repos/bindukuri/GithubActionsTest/git/refs/heads/$local_branch
 echo "$message"
 exit 1
 
